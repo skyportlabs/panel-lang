@@ -1,0 +1,22 @@
+<%- include('components/template') %>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.0/min/vs/loader.js"></script>
+
+<main id="content">
+    <div class="bg-transparent">
+        <div class="sm:flex sm:items-center px-8 pt-4">
+            <div class="sm:flex-auto">
+                <h1 class="text-base font-medium leading-6 text-white"><%= req.translations.manage_instance %></h1>
+                <p class="mt-1 tracking-tight text-sm text-neutral-500"><%= req.translations.instance_view_detail_text %></p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('components/instance') %>
+
+    <h1 class="text-neutral-500 font-mono tracking-widest px-8 text-sm mb-1"><%= req.translations.fivezerozero_error_instance %></h1>
+    <p class="text-white font-medium text-lg px-8 mt-4"><%= req.translations.something_went_wrong_there %></p>
+    <p class="text-neutral-400 font-normal px-8 mt-1"><%= req.translations.error_returned_text %> <code><%= error || req.translations.error_information_available %></code></p>
+</main>
+
+<%- include('components/footer') %>
