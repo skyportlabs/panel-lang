@@ -1,6 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 
+
+
 function loadTranslations(lang) {
   const filePath = path.join(__dirname, `../lang/${lang}/lang.json`);
   if (fs.existsSync(filePath)) {
@@ -10,8 +12,9 @@ function loadTranslations(lang) {
 }
 
 function translationMiddleware(req, res, next) {
-  req.lang = req.user && req.user.lang ? req.user.lang : 'en';
+  req.lang = req.cookies && req.cookies.lang ? req.cookies.lang : 'en';
   req.translations = loadTranslations(req.lang);
+  console.log(req.lang);
   next();
 }
 
