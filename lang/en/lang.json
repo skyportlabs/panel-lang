@@ -177,5 +177,13 @@
     "Image": "Image 😍",
     "Identifier": "Identifier 😍",
     "connectionfailure": "Connection Failure 😍",
-    "connectionfailureText": "The node running this instance appears to be having issues. Please wait... 😍"
+    "connectionfailureText": "The node running this instance appears to be having issues. Please wait... 😍",
+    "sendacommandPlaceholder": "Send a command... 😍",
+    "status": "Status 😍",
+    "RamUsage": "Ram Usage 😍",
+    "CPUUsage": "CPU Usage 😍",
+    "DiskUsage": "Disk Usage 😍",
+    "start": "Start 😍",
+    "stop": "Stop 😍",
+    "restart": "Restart 😍"
     }
