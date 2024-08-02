@@ -3,8 +3,8 @@
    <div class="bg-transparent">
       <div class="sm:flex sm:items-center px-8 pt-4">
          <div class="sm:flex-auto">
-           <h1 class="text-base font-medium leading-6 text-white">Nodes</h1>
-           <p class="mt-1 tracking-tight text-sm text-neutral-500">A list of all the nodes set up on the Skyport panel.</p>
+           <h1 class="text-base font-medium leading-6 text-white"><%= req.translations.Nodes %></h1>
+           <p class="mt-1 tracking-tight text-sm text-neutral-500">A list of all the nodes set up on the Skyport panel. <%= req.translations.NodesText %></p>
          </div>
          <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
            <button id="createButton" type="button" class="block rounded-xl bg-white px-3 py-2 text-center text-sm font-medium text-neutral-800 shadow-lg hover:bg-neutral-200 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Create new node</button>
@@ -56,7 +56,7 @@
         </colgroup>
         <thead class="border-b border-white/5 text-sm leading-6 text-white">
           <tr>
-            <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:pl-80 lg:pl-8">Name</th>
+            <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:pl-80 lg:pl-8"><%= req.translations.Name %></th>
             <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:table-cell">Connection</th>
             <th scope="col" class="py-2 pl-0 pr-8 font-medium md:table-cell lg:pr-20">Instances</th>
 			<th scope="col" class="py-2 pl-0 pr-8 font-medium md:table-cell lg:pr-20">Actions</th>
