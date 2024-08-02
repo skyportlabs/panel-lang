@@ -3,11 +3,11 @@
    <div class="bg-transparent">
       <div class="sm:flex sm:items-center px-8 pt-4">
          <div class="sm:flex-auto">
-           <h1 class="text-base font-medium leading-6 text-white">Images</h1>
-           <p class="mt-1 tracking-tight text-sm text-neutral-500">A list of all the images on the Skyport panel.</p>
+           <h1 class="text-base font-medium leading-6 text-white"><%= req.translations.Images %></h1>
+           <p class="mt-1 tracking-tight text-sm text-neutral-500"><%= req.translations.ImagesText %></p>
          </div>
          <div class="mt-4 sm:ml-8 sm:mt-0 sm:flex-none">
-          <button id="uploadimage" type="button" class="block rounded-xl bg-white px-3 py-2 text-center text-sm font-medium text-neutral-800 shadow-lg hover:bg-neutral-200 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Import Image</button>
+          <button id="uploadimage" type="button" class="block rounded-xl bg-white px-3 py-2 text-center text-sm font-medium text-neutral-800 shadow-lg hover:bg-neutral-200 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><%= req.translations.ImportImage %></button>
         </div>
        </div>
       <div style="display: block;" id="nodeTable" class="mt-6 w-full">
@@ -21,10 +21,10 @@
         </colgroup>
         <thead class="border-b border-white/5 text-sm leading-6 text-white">
           <tr>
-            <th scope="col" class="py-2 pl-4 pr-8 font-medium sm:pl-6 lg:pl-8">Name</th>
-            <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:table-cell">Author</th>
-            <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:table-cell">Docker Image</th>
-            <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:table-cell">Actions</th>
+            <th scope="col" class="py-2 pl-4 pr-8 font-medium sm:pl-6 lg:pl-8"><%= req.translations.Name %></th>
+            <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:table-cell"><%= req.translations.Author %></th>
+            <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:table-cell"><%= req.translations.DockerImage %></th>
+            <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:table-cell"><%= req.translations.Actions %></th>
           </tr>
         </thead>
         <tbody class="divide-y divide-white/5">
@@ -47,7 +47,7 @@
             </td>
             <td class="py-4 pl-0 pr-4 sm:table-cell sm:pr-8">
               <div class="flex gap-x-3">
-                <div onclick="deleteImage('<%= image.Id %>')" class="block rounded-xl bg-red-600 px-3 py-2 text-center text-sm font-medium text-white shadow-lg hover:bg-red-500 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Remove</div>
+                <div onclick="deleteImage('<%= image.Id %>')" class="block rounded-xl bg-red-600 px-3 py-2 text-center text-sm font-medium text-white shadow-lg hover:bg-red-500 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><%= req.translations.removeButton %></div>
               </div>
             </td>
           </tr>
@@ -56,7 +56,7 @@
       </table>
       </div>
       <div style="display: none;" id="imageDetail" class="mt-6 pl-8 w-full text-white">
-        <button id="backButton" class="block rounded-xl bg-neutral-800 px-3 py-2 text-center text-sm font-medium text-white shadow-lg hover:bg-neutral-600 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Back</button>
+        <button id="backButton" class="block rounded-xl bg-neutral-800 px-3 py-2 text-center text-sm font-medium text-white shadow-lg hover:bg-neutral-600 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><%= req.translations.backButton %></button>
         <h1 id="imageName" class="text-2xl font-bold mt-4"></h1>
         <p id="imageDescription" class="mt-2 text-neutral-400"></p>
         <div class="mt-4">

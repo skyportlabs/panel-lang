@@ -3,9 +3,9 @@
   <div class="bg-transparent">
     <div class="sm:flex sm:items-center px-8 pt-4">
       <div class="sm:flex-auto">
-        <h1 class="text-base font-medium leading-6 text-white">API Keys</h1>
+        <h1 class="text-base font-medium leading-6 text-white"><%= req.translations.APIKeys %></h1>
         <p class="mt-1 tracking-tight text-sm text-neutral-500">
-          A list of all the API Keys on the Skyport panel.
+          <%= req.translations.APIKeysText %>
         </p>
       </div>
       <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
@@ -14,7 +14,7 @@
           type="button"
           class="block rounded-xl bg-white px-3 py-2 text-center text-sm font-medium text-neutral-800 shadow-lg hover:bg-neutral-200 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
-          Create new API Key
+        <%= req.translations.createnewapikey %>
         </button>
       </div>
     </div>
@@ -51,22 +51,22 @@
               scope="col"
               class="py-2 pl-0 pr-8 font-medium sm:pl-80 lg:pl-8"
             >
-              ID
+              <%= req.translations.ID %>
             </th>
             <th scope="col" class="py-2 pl-0 pr-8 font-medium sm:table-cell">
-              Key
+              <%= req.translations.Key %>
             </th>
             <th
               scope="col"
               class="py-2 pl-0 pr-8 font-medium md:table-cell lg:pr-20"
             >
-              Created At
+            <%= req.translations.createdat %>
             </th>
             <th
               scope="col"
               class="py-2 pl-0 pr-8 font-medium md:table-cell lg:pr-20"
             >
-              Actions
+            <%= req.translations.Actions %>
             </th>
           </tr>
         </thead>
@@ -125,7 +125,7 @@
           type="button"
           class="block rounded-xl bg-white px-3 py-2 text-center text-sm font-medium text-neutral-800 shadow-lg hover:bg-neutral-200 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
-          Click to confirm creation
+          <%= req.translations.clicktoconfirmcreation %>
         </button>
       </form>
     </div>

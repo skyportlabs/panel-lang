@@ -26,10 +26,8 @@
         <div class="bg-transparent">
             <div class="sm:flex sm:items-center px-8 pt-4">
                 <div class="sm:flex-auto">
-                    <h1 class="text-base font-medium leading-6 text-white">Manage Instance</h1>
-                    <p class="mt-1 tracking-tight text-sm text-neutral-500">View, update and manage an instance on the
-                        Skyport panel.
-                    </p>
+                    <h1 class="text-base font-medium leading-6 text-white"><%= req.translations.manageInstance %></h1>
+                    <p class="mt-1 tracking-tight text-sm text-neutral-500"><%= req.translations.manageInstanceText %></p>
                 </div>
                 <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex gap-2.5">
                     <button id="startButton" type="button"
@@ -70,7 +68,7 @@
             <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-4 mr-8">
                 <div class="overflow-hidden rounded-xl bg-[#171717]/50 px-4 py-5 shadow sm:p-6 flex items-center">
                     <div class="flex-grow">
-                        <dt class="truncate text-sm font-medium text-neutral-400">IP Address</dt>
+                        <dt class="truncate text-sm font-medium text-neutral-400"><%= req.translations.Address %></dt>
                         <dd class="mt-1 text-lg font-medium tracking-tight text-white">
                             <span>
                                 <%= instance.Node.address %><span class="text-neutral-400">:<%= instance.Primary %>
@@ -84,7 +82,7 @@
                 </div>
                 <div class="overflow-hidden rounded-xl bg-[#171717]/50 px-4 py-5 shadow sm:p-6 flex items-center">
                     <div class="flex-grow">
-                        <dt class="truncate text-sm font-medium text-neutral-400">Image</dt>
+                        <dt class="truncate text-sm font-medium text-neutral-400"><%= req.translations.Image %></dt>
                         <dd class="mt-1 text-lg font-medium tracking-tight text-white">
                             <span>
                                 <%= instance.Image %>
@@ -97,7 +95,7 @@
                 </div>
                 <div class="overflow-hidden rounded-xl bg-[#171717]/50 px-4 py-5 shadow sm:p-6 flex items-center">
                     <div class="flex-grow">
-                        <dt class="truncate text-sm font-medium text-neutral-400">Node</dt>
+                        <dt class="truncate text-sm font-medium text-neutral-400"><%= req.translations.Node %></dt>
                         <dd class="mt-1 text-lg font-medium tracking-tight text-white">
                             <%= instance.Node.name %> <span class="text-neutral-500">(<%= instance.Node.address %>)</span>
                         </dd>
@@ -108,7 +106,7 @@
                 </div>
                 <div class="overflow-hidden rounded-xl bg-[#171717]/50 px-4 py-5 shadow sm:p-6 flex items-center">
                     <div class="flex-grow">
-                        <dt class="truncate text-sm font-medium text-neutral-400">Identifier</dt>
+                        <dt class="truncate text-sm font-medium text-neutral-400"><%= req.translations.Identifier %></dt>
                         <dd class="mt-1 text-lg font-medium tracking-tight text-white">
                             <%= req.params.id %>
                         </dd>
@@ -132,9 +130,9 @@
                     </svg>
                 </div>
                 <div class="ml-5">
-                    <h3 class="text-sm font-medium text-red-400">Connection failure</h3>
+                    <h3 class="text-sm font-medium text-red-400"><%= req.translations.connectionfailure %></h3>
                     <div class="text-sm text-red-400/50">
-                        <p>The node running this instance appears to be having issues. Please wait...</p>
+                        <p><%= req.translations.connectionfailureText %></p>
                     </div>
                 </div>
             </div>
