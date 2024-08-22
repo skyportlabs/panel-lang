@@ -1,2 +1,2 @@
-# panel-lang
-beta to make the language variables all over the panel
+# DO NOT  USE THIS REPOSITORY!!!
+## THIS REPOSITORY JUST GOT MADE FOR DEVELOPING AND IS REALY OUTDATED!
